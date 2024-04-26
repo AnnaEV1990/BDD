@@ -1,4 +1,4 @@
-package ru.netology.data;
+package ru.netology.web.data;
 
 import lombok.Value;
 
@@ -41,11 +41,11 @@ public class DataHelper {
         String cardNumber;
         String testId;
 
+    }
 
-        @Value
-        public static class AuthInfo {
-            String login;
-            String password;
-        }
+    @Value
+    public static class AuthInfo {
+        String login;
+        String password;
     }
 }
