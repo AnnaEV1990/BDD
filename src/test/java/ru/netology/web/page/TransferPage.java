@@ -14,11 +14,11 @@ public class TransferPage {
     private final SelenideElement transferButton = $("[date-test-id=action-transfer] input");
     private final SelenideElement amountInput = $("[date-test-id=amount] input");
     private final SelenideElement fromInput = $("[date-test-id=amount] input");
-    private final SelenideElement transferHead = $(byText("Пополнение карты"));
     private final SelenideElement errorMessage = $("[date-test-id=error-notification] .notification__content");
 
 
     public TransferPage() {
+        SelenideElement transferHead = $(byText("Пополнение карты"));
         transferHead.shouldBe(visible);
     }
 
