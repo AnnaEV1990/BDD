@@ -49,6 +49,7 @@ class MoneyTransferTest {
         assertAll(() -> assertEquals(expectedBalanceFirstCard, actualBalanceFirstCard),
                 () -> assertEquals(expectedBalanceSecondCard, actualBalanceSecondCard));
 
+
     }
 
     @Test
@@ -67,13 +68,4 @@ class MoneyTransferTest {
 }
 
 
-//   @Test
-//   void shouldTransferMoneyBetweenOwnCardsV1() {
-
-
-//   @Test
-//  void shouldTransferMoneyBetweenOwnCardsV2() {
-
-//   @Test
-//   void shouldTransferMoneyBetweenOwnCardsV3() {
 

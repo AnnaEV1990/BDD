@@ -11,14 +11,16 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class DashboardPage {
-    private final String balanceStart = "баланс";
-    private final String balanceFinish = "р.";
+    private final String balanceStart;
+    private final String balanceFinish;
     private final SelenideElement heading = $("[data-test-id=dashboard]");
-    private final ElementsCollection cards = $$("[.list__item div]");
+    private final ElementsCollection cards = $$(".list__item");
     private final SelenideElement reloadButton = $("[data-test-id=action-reload]");
 
     public DashboardPage() {
         heading.shouldBe(visible);
+        balanceStart = "баланс: ";
+        balanceFinish = " р.";
     }
 
     public int getCardBalance(String maskedCardNumber) {
