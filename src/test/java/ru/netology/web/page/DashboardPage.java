@@ -14,7 +14,7 @@ public class DashboardPage {
     private final String balanceStart;
     private final String balanceFinish;
     private final SelenideElement heading = $("[data-test-id=dashboard]");
-    private final ElementsCollection cards = $$("list__item");
+    private final ElementsCollection cards = $$(".list__item div");
     private final SelenideElement reloadButton = $("[data-test-id=action-reload]");
 
     public DashboardPage() {
